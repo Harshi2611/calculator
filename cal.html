@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="cal">
+      <input type="text" id="display" readonly />
+      <div class="button-container">
+        <button class="button" onclick="cuuValueDis=''; document.querySelector('#display').value = cuuValueDis;"">C</button>
+        <button
+          class="button"
+          onclick="cuuValueDis++; document.querySelector('#display').value = cuuValueDis;"
+        >
+          1
+        </button>
+        <button
+          class="button"
+          onclick="cuuValueDis+=2; document.querySelector('#display').value = cuuValueDis;"
+        >
+          2
+        </button>
+        <button
+          class="button"
+          onclick="cuuValueDis = cuuValueDis + '+'; document.querySelector('#display').value = cuuValueDis;"
+        >
+          +
+        </button>
+        <button
+          class="button"
+          onclick="cuuValueDis+=3; document.querySelector('#display').value = cuuValueDis;"
+        >
+          3
+        </button>
+        <button
+          class="button"
+          onclick="cuuValueDis+=4; document.querySelector('#display').value = cuuValueDis;"
+        >
+          4
+        </button>
+        <button
+          class="button"
+          onclick="cuuValueDis = cuuValueDis + '-'; document.querySelector('#display').value = cuuValueDis;"
+        >
+          -
+        </button>
+        <button
+          class="button"
+          onclick="cuuValueDis+=5; document.querySelector('#display').value = cuuValueDis;"
+        >
+          5
+        </button>
+        <button
+          class="button"
+          onclick="cuuValueDis+=6; document.querySelector('#display').value = cuuValueDis;"
+        >
+          6
+        </button>
+        <button
+          class="button"
+          onclick="cuuValueDis = cuuValueDis + '*'; document.querySelector('#display').value = cuuValueDis;"
+        >
+          *
+        </button>
+        <button
+          class="button"
+          onclick="cuuValueDis+=7; document.querySelector('#display').value = cuuValueDis;"
+        >
+          7
+        </button>
+        <button
+          class="button"
+          onclick="cuuValueDis+=8; document.querySelector('#display').value = cuuValueDis;"
+        >
+          8
+        </button>
+        <button
+          class="button"
+          onclick="cuuValueDis = cuuValueDis + '/'; document.querySelector('#display').value = cuuValueDis;"
+        >
+          /
+        </button>
+        <button class="button" onclick="
+        cuuValueDis=eval(cuuValueDis); document.querySelector('#display').value = cuuValueDis;"">=</button>
+        <button
+          class="button"
+          onclick="cuuValueDis+=9; document.querySelector('#display').value = cuuValueDis;"
+        >
+          9
+        </button>
+        <button
+          class="button"
+          onclick="cuuValueDis+=0; document.querySelector('#display').value = cuuValueDis;"
+        >
+          0
+        </button>
+        <button
+          class="button"
+          onclick="cuuValueDis = cuuValueDis + '.'; document.querySelector('#display').value = cuuValueDis;"
+        >
+          .
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
